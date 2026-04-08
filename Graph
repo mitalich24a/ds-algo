@@ -1,0 +1,36 @@
+DFS
+BFS
+Cycle Detect Directed & UnDirected
+Topological Sort
+
+Dijkstra’s Algorithm
+Bellman Ford : Adjancey list
+Floyd Warshall : Matrix
+
+Type of Edges
+Bridges
+Strongly Connected Components
+Graph Colouring
+Counting Paths
+Tarjan’s algorithm
+Kosaraju’s
+Tarjan’s SCC
+Kahn
+
+BFS/DFS on matrix-based graphs
+
+Questions
+https://leetcode.com/problems/clone-graph/description/
+https://leetcode.com/problems/course-schedule-ii/description/
+https://leetcode.com/problems/number-of-islands/description/
+
+https://leetcode.com/problems/cheapest-flights-within-k-stops/description/
+https://leetcode.com/problems/01-matrix/
+
+https://leetcode.com/problems/path-with-minimum-effort/
+https://leetcode.com/problems/path-with-maximum probability/description/
+
+
+
+
+
