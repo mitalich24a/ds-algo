@@ -24,6 +24,9 @@
                Invariant → What always remains true
                Transition → How state changes
                Condition → Decision-making logic
+               RECURRENCE
+               BASE CASE
+               OVERLAP
                Termination → When the process ends
 
 6. Always analyze time and space complexity before finalizing the solution.
