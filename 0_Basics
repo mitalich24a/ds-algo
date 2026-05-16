@@ -1,0 +1,39 @@
+1. Think of every problem as building a small system.
+
+2. Focus on pattern recognition rather than memorizing solutions.
+
+3. After identifying a pattern, identify
+            Similarity
+            Differences
+
+4. Input 
+            Constraints
+            Edge Cases
+
+5. Output 
+            Format
+
+5. Proposed atleast 3 Solution 
+            Brute Force
+            Optimised 1
+            Optimised 2
+
+            And Explain and solve problems using:
+
+               State → What information defines the problem now
+               Invariant → What always remains true
+               Transition → How state changes
+               Condition → Decision-making logic
+               Termination → When the process ends
+
+6. Always analyze time and space complexity before finalizing the solution.
+
+7. Write code that speaks for itself 
+            Helper Methods
+            Enum 
+            Readable/Relatable Func/Variable Name
+
+8. Think like a reviewer:
+
+           Would I merge this PR?
+           Is the logic correct across all checks and edge cases?
