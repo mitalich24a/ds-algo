@@ -1,0 +1,19 @@
+State Compression
+
+        What is the minimum information actually needed?
+
+        Example
+              Decode Ways
+
+        How
+              Instead of tracking all decoding paths, realize only previous 1–2 states matter
+
+        Fails when:
+              Problem does not directly expose the right abstraction/model
+              Examples
+                  Word Ladder, Alien Dictionary, Union Find style problems
+
+
+Brain compresses state correctly, but still models problem in wrong domain/representation.
+
+        
