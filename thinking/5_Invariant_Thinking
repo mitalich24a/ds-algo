@@ -1,0 +1,20 @@
+Invariant Thinking
+          What local truth always stays valid?
+
+          Example
+              Trapping Rain Water
+
+          How
+              Instead of simulating whole water structure,focus on invariant:
+              water at index i depends only on min(maxLeft, maxRight)
+
+          Fails when
+              Too much state is still being tracked or recomputed
+              Example
+                  DP problems like Decode Ways / Edit Distance
+
+Brain understands local correctness, but still tracks too many possibilities/states,
+so solution does not compress into minimal information.
+
+          
+            
