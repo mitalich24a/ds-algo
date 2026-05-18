@@ -1,0 +1,17 @@
+Constraint Awareness
+        What property/order/constraint can I exploit?
+
+        Example
+            Valid Triangle
+
+        How
+          Notice sorted order gives property
+          if: a + b > c then all elements between also work
+
+        Fails when
+            You see useful properties,
+            but still don’t know what exact local state determines the answer
+
+
+Why it breaks
+Brain identifies exploitable structure, but reasoning is still too global and not invariant-driven.
