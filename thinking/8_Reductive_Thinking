@@ -1,0 +1,25 @@
+Reductive Thinking
+
+        What part of this problem is fake complexity or unnecessary?
+
+        Example
+              Ants/People Colliding on a Plank
+
+        How
+            Instead of simulating collisions, realize collision between identical objects is mathematically 
+            equivalent to passing through each other. 
+            So, complex interaction becomes independent movement
+
+        Fails when
+            The interaction actually changes future state/identity/outcome.
+            Example
+                Robot with changing direction/state after collision, or 
+                games where collisions modify energy/score/state.
+                
+
+Brain removes interactions assuming they are irrelevant, but here interactions genuinely alter future system behavior.
+        
+
+
+        
+        
