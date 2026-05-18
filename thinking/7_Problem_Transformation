@@ -1,0 +1,22 @@
+Problem Transformation
+
+        What is this problem secretly equivalent to?
+
+        Example
+              Word Ladder
+
+        How
+            Transform: words + one-letter transitions
+            Graph problem, BFS shortest path
+
+        Fails when
+            Problem requires combining multiple abstractions/models together
+            Example
+              Hard DP + Greedy + Graph hybrid problems
+
+
+Correctly modeling the problem becomes the main skill, because once transformed, solution often becomes standard.
+
+Even correct transformation is insufficient, because multiple interacting abstractions must be balanced simultaneously.
+
+        
