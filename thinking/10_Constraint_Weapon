@@ -1,0 +1,37 @@
+Constraint Weaponization
+      What do the constraints force the solution to be?
+
+                Example:
+                N <= 20
+                
+                How:
+                Immediately infer:
+                exponential/subset solutions may work,
+                so think:
+                - Bitmask DP
+                - Backtracking
+                - Meet in the Middle
+                
+                Example:
+                N <= 10^5
+                
+                Infer:
+                solution must likely be:
+                - O(N)
+                - O(N log N)
+                
+                so think:
+                - Two Pointers
+                - Heap
+                - Monotonic Stack
+                - Binary Search
+
+  Fails when:
+              You map constraints mechanically
+              without understanding actual bottleneck/state transitions.
+              Example
+                  Graph problems with small N
+                  but huge hidden state dimensions.
+
+
+Constraints guide search space, but do not automatically reveal the correct abstraction or state model.
