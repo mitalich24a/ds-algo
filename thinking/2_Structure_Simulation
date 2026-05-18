@@ -1,0 +1,19 @@
+Structured Simulation
+
+          Imitating everything 
+          Creates chaos 
+          Reduceusing structure
+
+          Example
+              Meeting Rooms
+
+          How 
+              Instead of checking every interaction manually
+              Use structure like sorting, heap, queue, stack, pointers etc
+              To control and reduce interactions.
+
+          Fails When
+              The problem is not about managing interactions/events, but about 
+              Discovering the hidden property/invariant
+
+          Brain still thinks globally, and every new state/change can affect many previous assumptions indirectly
