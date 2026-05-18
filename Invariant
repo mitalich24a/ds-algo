@@ -1,0 +1,36 @@
+Invariant : Something that does not change : अपरिवर्तनीय
+
+A condition, Property, or Logical assertion that is guaranteed to remain unchanged throughout a specific phase of program execution.
+
+Type 
+      Loop Invariants
+      Class / Object Invariants
+      Data Type Invariants
+
+Example
+
+      Binary Search 
+              Answer ALWAYS lies inside [l, r]
+      
+      Sliding Window
+              Q : Longest substring without repeating chars
+              I : Window always contains unique characters
+      
+      Two Pointer
+              Q : Container with most water
+              I : Area limited by shorter wall
+      
+      Heap
+              Heap top always contains smallest/largest needed element
+      
+      BFS
+              Queue contains nodes of current frontier
+
+      DP
+              Q : House Robber
+              I : maximum money till index i
+
+
+
+        
+
