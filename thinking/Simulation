@@ -1,0 +1,12 @@
+Simulation : Imitate everything
+    Example
+        Valid Parentheses, Move Zeroes, Robot Movement
+    How 
+        Track every step exactly as problem describes.
+
+    Fails When
+        Too many interactions/cases explode
+        Example
+          Trapping Rain Water
+
+    Brain becomes overloaded because every new bar affects many previous assumptions globally
