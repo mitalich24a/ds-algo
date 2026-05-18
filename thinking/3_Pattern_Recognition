@@ -4,13 +4,19 @@ Pattern Recognition
 
         Example
             Two Pointers, Sliding Window, DFS, DP
+            3Sum
 
         How
             Map new problem to previously solved template/pattern
+            3Sum Recognize
+                Sort array
+                Use two pointers
 
         Fails When
             Problem looks similar superficially,
             But underlying property/invariant is different so template not working
+            Example
+                Valid Triangle
 
 Brain memorizes steps/templates,
 not why those steps are valid,
