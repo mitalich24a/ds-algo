@@ -12,6 +12,6 @@ Pattern Recognition
             Problem looks similar superficially,
             But underlying property/invariant is different so template not working
 
-        Brain memorizes steps/templates,
-        not why those steps are valid,
-        so solving becomes iterative bug fixing instead of derivation
+Brain memorizes steps/templates,
+not why those steps are valid,
+so solving becomes iterative bug fixing instead of derivation
