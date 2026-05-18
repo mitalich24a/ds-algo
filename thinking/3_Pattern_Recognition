@@ -1,0 +1,17 @@
+Pattern Recognition
+
+        I’ve seen this pattern before.
+
+        Example
+            Two Pointers, Sliding Window, DFS, DP
+
+        How
+            Map new problem to previously solved template/pattern
+
+        Fails When
+            Problem looks similar superficially,
+            But underlying property/invariant is different so template not working
+
+        Brain memorizes steps/templates,
+        not why those steps are valid,
+        so solving becomes iterative bug fixing instead of derivation
