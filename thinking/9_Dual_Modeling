@@ -1,0 +1,20 @@
+Dual/Symmetric Modeling
+
+      Can I solve the opposite/complement/symmetric version more easily?
+
+      Example
+            Subarrays with Exactly K Distinct Integers
+
+      How
+            Instead of counting exactly K directly, compute atMost(K) - atMost(K-1)
+            Complex exact counting → simpler complementary counting
+
+      Fails when:
+            Complement/opposite version is equally hard or loses important information.
+            Example
+                Problems where valid configurations cannot be derived cleanly from invalid ones.
+
+Brain flips perspective, but transformed version does not actually simplify state or computation.
+
+      
+            
