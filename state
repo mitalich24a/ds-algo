@@ -1,0 +1,33 @@
+State
+      The minimal information required to continue computation correctly.
+
+A single state can involve
+      multiple variables
+      a data structure
+      or even an invariant
+
+Story-based coding 
+          is fragile 
+              because variables represent temporary thoughts that keep changing during the loop.
+State-based coding 
+          is stable 
+              because variables represent invariants — fixed truths about the system
+
+Example
+        Traffic Light
+              Story
+                    If it was green for 30 seconds, turn yellow… unless an emergency vehicle passed
+                    This quickly becomes messy and buggy
+
+              State
+                    State Space
+                          RED, YELLOW, GREEN
+                          
+                    Transitions
+                          RED → GREEN
+                          GREEN → YELLOW
+                          YELLOW → RED
+
+                  Now the system is bounded and predictable
+
+        
