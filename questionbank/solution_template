@@ -1,0 +1,46 @@
+For 45 Mins DSA
+
+Phase 1: Clarify & Define Bounds : 5M (0–5 )
+            Goal
+                Think like a Tech Lead before coding
+            Clarify constraints
+                input size, memory limits, negatives, duplicates, overflow risks.
+            Understand system context
+                streaming vs batch, read-heavy vs write-heavy.
+            State assumptions clearly 
+                (e.g., “Assuming input fits in memory initially.”)
+
+Phase 2: Architecture & Complexity Pitch : 7M (5–12)
+            Goal
+              Align on the solution strategy early
+            Mention brute force briefly with exact complexity and why it fails at scale.
+            Present the optimal approach and the core pattern/data structure.
+            Explain the complexity improvement clearly.
+            Pause and confirm alignment before coding.
+
+Phase 3: Modular Implementation : 18M (12–30)
+            Goal
+              Write production-quality code
+            Think out loud continuously — explain decisions and tradeoffs.
+            Keep logic modular
+              stub helper functions if needed.
+            Prefer iterative approaches over deep recursion when possible.
+            Use clean naming and defensive edge-case handling
+
+Phase 4: Dry Run & Edge Validation :5M (30–35)
+            Goal
+              Validate correctness without relying on the compiler
+            Walk through a concrete example step-by-step.
+            Test edge cases explicitly: empty input, single element, overflow, negatives.
+            If you find a bug, fix it calmly and explain the reasoning
+
+Phase 5: Senior-Level Follow-ups: 7M (35–42)
+            Goal
+              Show architectural depth under changing constraints.
+            Expect follow-ups around 
+              concurrency, scaling, or distributed systems.
+            Discuss tradeoffs 
+              using system design concepts like thread safety, locks, partitioning, caching, and memory optimization.
+            Focus on architecture even if full implementation isn’t feasible
+
+Phase 6: Reverse Interview : 3M (42–45 min) 
