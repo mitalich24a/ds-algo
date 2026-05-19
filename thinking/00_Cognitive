@@ -1,0 +1,38 @@
+Cognitive
+      The mental processes
+            involved in acquiring, processing, and using knowledge
+
+There are 2 ways how brain reacts up on DSA problem
+
+1) Story + Examples + Code flow
+            Most engineers code by narrating steps in their head:
+            
+              > “Move this pointer… swap here… store previous max in temp…”
+            
+            This works for easy problems, but fails on LeetCode Hard.
+            
+              Why? Your working memory can only track ~4–7 things at once. 
+              Hard problems have too many moving parts. When you code as a running story, 
+              your brain eventually loses track of invariants, pointer meaning, or state.
+            
+            That’s when the code devolves into buggy `if` statements, random temp variables, and spaghetti logic.
+
+2) State + Dependency + Information flow
+            
+            Elite problem solvers don’t think in code stories — they think in systems
+
+            State → What is the minimum information I must remember right now?
+            Dependency → What does the next state actually depend on?
+            Information Flow → How does data transform as it moves through the system?
+
+            This shifts the mindset from:
+                    What line of code do I write next?
+            To
+                    What state must be maintained, and how does information evolve?
+
+            The problem stops feeling like chaotic coding and starts feeling like designing a 
+            clean state machine or data pipeline
+
+Change from 1 to 2 to get better at DSA, this is about re-wiring you brain, unlearning -> learning.
+
+
