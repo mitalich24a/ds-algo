@@ -1,0 +1,55 @@
+To rewire your brain from “Story Thinking” to “State Thinking,” you must accept one thing:
+
+Your brain naturally defaults to narratives, not state machines.
+
+So if you want to think like an Elite problem solver, you need strict training constraints 
+that force your brain to reason in terms of state, dependency, and transitions.
+
+1) The “No-English” Variable Rule
+          Never name variables based on the story
+
+          Avoid 
+              temp, flag, count, currentHolding
+              These names are vague and unstable
+
+          Use state-defined names instead
+              min_so_far, max_ending_at_i, unmatched_open_brackets, visited_bitmask
+              Precise names force precise thinking.
+
+2) Write the State Schema Before Coding
+          Before writing a loop, define the exact state being tracked
+          If you cannot define the state cleanly, you are not ready to code.
+
+3) Think in State Transitions
+                Do not think in stories. 
+                Think in deterministic transitions:
+                            Next State=f(Current State,Input)
+                Example
+                    Instead of 
+                          Add numbers… if negative reset…
+                    Think 
+                          max_ending_here = max(nums[i], max_ending_here + nums[i])
+                          global_max = max(global_max, max_ending_here)
+      
+                Pure state transformation. No narrative. No ambiguity.
+
+4) The “No-History” Rule
+                Do not let your loop remember the past implicitly
+                Your next step should depend only on
+                              the current input
+                              and the current state
+                Think like a Markov process
+
+5) Separate “State Update” from “Answer Capture”
+
+6) Monotonic Structures Have One Truth
+                A monotonic stack or queue is not “a push/pop story.
+                It is a constraint engine
+                Define the invariant:
+                      The stack must remain strictly increasing
+                Then aggressively enforce it
+                You are not managing elements, You are protecting an invariant.
+
+7) The “No-Run” Drill
+                Stop relying on the compiler to debug your thinking
+        
