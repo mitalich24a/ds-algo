@@ -1,0 +1,17 @@
+If something stronger/better/more useful has arrived, remove weaker useless candidates.
+
+Monotonic 
+        Increasing 
+        Decreasing 
+Main Character is Either 
+        Current Element 
+        Popped Element
+
+Do I care about things getting taller or shorter?
+        Increasing vs. Decreasing
+
+When I stand at an index, am I looking for its boundary, or is it acting as a boundary for old elements?
+        Current vs. Popped
+
+
+https://leetcode.com/problems/largest-rectangle-in-histogram/
