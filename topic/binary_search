@@ -3,3 +3,6 @@ Binary Search
     Work Distribution 
     2D Matrix
     Binary Search on Answer
+                It works for problems where you need to find the maximum or minimum value satisfying a monotonic condition
+                meaning if a value (X) works, then all larger (or smaller) values also work.
+
