@@ -1,30 +1,27 @@
+import heapq
+
 def prims(n, graph):
+    visited = set()
 
-    min_cost = [float('inf')] * n
-    in_mst = [False] * n
-
-    min_cost[0] = 0
+    min_heap = [(0, 0)]  # (weight, node)
 
     mst_cost = 0
 
-    for _ in range(n):
+    while min_heap:
 
-        node = -1
+        weight, node = heapq.heappop(min_heap)
 
-        for i in range(n):
-            if not in_mst[i]:
-                if node == -1 or min_cost[i] < min_cost[node]:
-                    node = i
+        if node in visited:
+            continue
 
-        in_mst[node] = True
-        mst_cost += min_cost[node]
+        visited.add(node)
+        mst_cost += weight
 
-        for nei, wt in graph[node]:
-
-            if not in_mst[nei]:
-                min_cost[nei] = min(
-                    min_cost[nei],
-                    wt
+        for nei, edge_weight in graph[node]:
+            if nei not in visited:
+                heapq.heappush(
+                    min_heap,
+                    (edge_weight, nei)
                 )
 
     return mst_cost
