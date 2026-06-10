@@ -42,7 +42,7 @@ class BaseSegmentTree(ABC):
             self._update(2 * tree_idx + 1, mid + 1, end, target_idx, new_val)
         self.tree[tree_idx] = self._combine(self.tree[2 * tree_idx], self.tree[2 * tree_idx + 1])
 
-    def query(self, left, right):
+    def range_query(self, left, right):
         return self._query(1, 0, self.n - 1, left, right)
 
     def _query(self, tree_idx, start, end, l, r):
