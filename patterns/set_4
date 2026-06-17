@@ -1,35 +1,121 @@
-Graph
-    BFS
-    DFS
-    Matrix BFS
-    Matrix DFS
+Nodes & Edges
+        Elements representing entities (states) and their connections (relationships)
+        LC 1192
 
-    Kahn's
-    Dijistra
-    Bellman Ford
-    Floyd Warshall
-    Union Find
-    MultiSource Dijistra
-    Prims
-    Krushkal
-    Euler/Hierholzer
-    Tree DP
+Node Traversal
+        Track visited physical locations or states; once a node is marked visited, 
+        it is skipped entirely because returning to it yields no new utility
+        LC 864
 
-    Directed
-    Weighted
-    Cyclic
-    Tree
-    Dense
+Edge Traversal
+        Track visited connections or transitions; you can revisit the same node multiple times as long as you 
+        arrive via a completely fresh, unused path
+        LC 332
+        
+Traversal
+        Systematically visiting every reachable entity in the network to inspect or catalog states.
+        LC 847
+Cyclic
+        Graphs containing paths that start and end at the same node, necessitating a visited set to avoid infinite loops
+        LC 261
+Dense
+        A graph where the number of edges approaches the maximum possible ($E \approx V^2$), 
+        making adjacency matrices better than adjacency lists
+        LC 1135
 
-    Nodes
-    Edges
-    Visit Node/Edge
+BFS
+        Explore layer-by-layer using a queue to find the shortest path in unweighted graphs
+        LC 815
 
-    Traversal
-    Shortest Path
-    Connectivity 
-    Topological Ordering
-    Euler Ordering
-    MST
+DFS
+        Explore as deep as possible along each branch using recursion or a stack before backtracking
+        LC 827
 
-    
+Matrix BFS
+        Standard layer-by-layer traversal adapted to a grid using directional coordinate arrays to step through valid neighbor cells.
+        LC 1293
+
+Matrix DFS
+        Deep grid-exploration often paired with backtracking to find paths or count distinct component properties.
+        LC 329
+
+Union Find
+        Efficiently group elements into sets using find (with path compression) and union (by rank) 
+        to check dynamic connectivity or detect cycles in $O(\alpha(N))$ time.
+        LC 952
+
+Connectivity
+        General reachability evaluation between structural components or isolated network sub-graphs
+        LC 1697
+
+Euler / Hierholzer's Algorithm
+        Find a path or circuit that visits every single edge exactly once by using DFS modified to post-order trace stuck paths 
+        and splice them together.
+        LC 332
+
+Weighted
+        Edges carry scalar cost values (distance, time, cost) changing search from hop-count to cost optimization.
+        LC 1976
+
+Shortest Path
+        The optimal traversal trajectory maximizing or minimizing a target edge weight metric between two nodes
+        LC 1368
+
+Dijkstra
+        Use a min-priority queue to greedily extract the minimum distance node to find the shortest path from a single source in 
+        non-negative weighted graphs.
+        LC 778
+
+Multi-Source Dijkstra
+        Initialize the min-priority queue with multiple starting nodes simultaneously to find the shortest distance 
+        from any source to all destinations.
+        LC 2050
+
+Bellman Ford
+        Relax all edges $V-1$ times to find shortest paths from a single source, capable of handling negative weights 
+        and detecting negative cycles
+        LC 787
+
+Floyd Warshall
+        Use dynamic programming ($O(V^3)$) to calculate the shortest path between all pairs of nodes by checking 
+        if an intermediate node $K$ offers a shorter route.
+        LC 1334
+
+Directed
+        Edges possess orientation; traveling from Node A to Node B does not automatically allow travel from B back to A
+        LC 207
+
+Topological Ordering
+        Linear ordering of vertices in a DAG such that for every directed edge $uv$, node $u$ comes before $v$.
+        LC 1857
+
+Kahn's Algorithm
+        Find a topological ordering in a DAG by iteratively removing nodes with an in-degree of 0 using a queue
+        LC 269
+
+Tree
+        A highly restricted connected, undirected graph with $N$ nodes and exactly $N-1$ edges containing zero cycles.
+        LC 124
+MST
+        A subset of edges connecting all vertices together with the absolute lowest collective edge weight sum without cycles.
+        LC 1631
+
+Prim's Algorithm
+        Build a Minimum Spanning Tree greedily by adding the cheapest possible edge that connects any node 
+        inside the growing tree to a node outside it
+        LC 1584
+
+Kruskal's Algorithm
+        Build a Minimum Spanning Tree by sorting all edges by weight and greedily adding them using Union-Find to 
+        skip edges that create cycles
+        LC 1489
+
+Euler Ordering
+        Flattening a tree into a linear array via its DFS entry and exit timestamps to resolve subtree queries with 
+        simple array ranges
+        LC 2322
+
+Tree DP
+        Execute dynamic programming over tree structures using bottom-up DFS to compute optimal sub-solutions from 
+        child sub-trees up to parent nodes
+        LC 834
