@@ -1,4 +1,47 @@
 LinkList
-Double LL 
+    2 Pointers
+      Use a fast and slow pointer moving at different speeds to detect cycles or locate the middle node in a single pass
+      LC 142
+    Dummy Node
+      Prepend a fake node before the head to eliminate edge cases when adding, removing, or swapping the first element of the list
+      LC 25
+    Inter-leaving
+      Split a list in half, reverse the second portion, and systematically weave the nodes together to reorder the list in-place
+      LC 1206
+
+Double LL
+    Constant Delete
+      Leverage direct access to both prev and next pointers to instantly remove any given node in constant time without 
+      traversing the list
+      LC 460
+
 Heap
+    Min
+      Maintain the smallest element at the root for $O(1)$ retrieval and log N updates, ideal for tracking 
+      the minimums of dynamic streams
+      LC 23
+
+    Max
+      Maintain the largest element at the root for Constant retrieval, 
+      commonly used to dynamically track the highest priority items.
+      LC 857
+
+    Multiple Heaps
+      Combine a Max-Heap (lower half) and a Min-Heap (upper half) to continuously balance elements 
+      and find the running median
+      LC 295
+
 Intervals
+    Merge
+      Sort intervals by their start times and combine adjacent segments whenever the start of the 
+      current interval overlaps the end of the previous one
+      LC 759
+
+    Delete
+      Identify target ranges to remove and adjust the boundaries of adjacent, overlapping intervals on the fly
+      LC 1272
+
+    Sweep Line
+      Treat interval boundaries as chronological events (start = +1, end = -1) and 
+      iterate through them to track active overlaps at any point in time
+      LC 218
