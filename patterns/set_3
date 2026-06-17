@@ -1,0 +1,50 @@
+DFS
+        Boundary DFS
+              Walk only along the edges/boundary of a tree or grid
+              LC 545
+              
+        Binary Tree DFS
+              Go as deep as possible in a tree, then come back
+              LC 124
+              
+        Graph DFS
+              Explore connected nodes deeply while avoiding cycles
+              LC 210
+              
+        Matrix DFS
+              Treat each cell as a node and explore connected cells
+              LC 130
+
+BFS
+        Shortest Path BFS
+                Explore level by level to find the shortest path in an unweighted graph.
+                LC 127
+                
+        Level Order BFS
+                Process nodes one level at a time
+                LC 103
+                
+        Graph BFS
+               Explore all neighbors first, then move deeper
+               LC 815
+               
+        Matrix BFS
+               Spread through a grid layer by layer
+               LC 994
+
+
+Keep Track of Call Stack
+        Leverage the language's implicit runtime stack (via recursion) to 
+        freeze current execution states and automatically resume them upon backtracking
+        
+Passing Variable
+        Send state arguments downward through recursive parameters to dictate context or 
+        constraints to deeper child nodes (e.g., path so far, current sum).
+        
+Global Variable
+        Maintain an external, persistent tracker to record a global optimum across disparate recursive paths 
+        that do not share a direct parent-child return relationship
+        
+Revisiting
+        Employ a tracking mechanism (like a hash set, boolean array, or in-place modification) 
+        to intercept and block processing of previously evaluated states, avoiding infinite loops
