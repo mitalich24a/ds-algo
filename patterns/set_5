@@ -1,16 +1,61 @@
-Trade time for space
-Trade space for time
+Trade Time for Space
+      Recompute values on the fly or compress data to minimize memory footprint at the expense of higher CPU cycles
+      LC 287
 
-Cache
-  LRU
-  LFU
-  LIFO
-  FIFO
+Trade Space for Time
+      Store precomputed results, lookups, or structural links in memory to instantly optimize execution speed to constant
+      LC 41
 
 Min/Max
+      Track extreme values dynamically in data streams or sliding windows to evaluate optimal choices in real time
+      LC 239
 
-Random
-  Probability 
-      Weighted
-  Duplicates
+Random (Probability/Weighted)
+      Use prefix sum boundaries combined with binary search to select indices based on non-uniform, proportional weight distributions.
+      LC 528
 
+Random (Duplicates)
+      Maintain an internal tracking map alongside a dynamic array to swap targeted duplicate elements to the tail end for true 
+      constant uniform random extraction.
+      LC 381
+
+LRU
+      Evict the item that hasn't been accessed for the longest duration by moving hit elements to the head of a list
+      LC 146
+
+LFU
+      Evict the item with the absolute lowest hit count, breaking ties by removing the least recently accessed item among them
+      LC 460
+
+LIFO
+      Evict the newest arriving element first, natively mirroring standard Stack object mechanics.
+      LC 71
+
+FIFO
+      Evict the oldest arriving element first, natively mirroring standard Queue object mechanics
+      LC 353
+
+DLL
+      A linear sequence of nodes with explicit forward and backward references, allowing localized constant deletions anywhere in the chain.
+      LC 432
+
+HashMap
+      A key-value store mapping raw data buckets via a hash function to unlock average-case constant point insertions, lookups, 
+      and deletions
+      LC 128
+
+Dict
+      A structured hash map that maintains its entries sorted by key value or insertion sequence, enabling range lookups 
+      or ordered iterations.
+      LC 220
+
+Fenwick Tree
+       A space-efficient array that stores cumulative frequency sums using bitwise transitions to achieve Log-N
+       prefix updates and queries
+       LC 315
+
+Segment Tree
+      A full binary tree structure where each node stores aggregated properties of a specific array range, facilitating complex custom range queries (like Range Max/GCD) 
+      and lazy propagation updates in Log-N time.
+      LC 307
+      LC 699
