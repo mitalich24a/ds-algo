@@ -1,0 +1,26 @@
+Optmisation
+  Prefix Sum
+  Fenwcik tree
+  Segment Tree
+  Senti-nel
+  Lazy Deletion
+  Relaztion 
+  Catalan Number
+  Acker Mann
+  Fence Post problem 
+  Edge Chaining
+
+TC 10 power
+  7 Fast
+  8 Boarderline
+  9 Slow
+
+Follow up 
+  Input not fit in memory
+  Space optmised
+  Concureency 
+      locks/mutex 
+      Segmented locking
+      Sempaphore
+      Rlock
+      RWlock
