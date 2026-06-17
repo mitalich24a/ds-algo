@@ -1,0 +1,45 @@
+Search
+      Binary Search
+              Divide the search space in half each step based on whether the midpoint is higher or lower than the target
+              log N
+              LC 34
+              
+      Rotated Search
+              Locate which half of the array remains normally sorted, then use standard binary search boundaries on that side
+              LC 33
+      
+      Matrix Search
+              LC 240
+      
+      Answer space Search
+              Guess a solution in a valid range [low, high], test its feasibility via a helper function, and shrink the range accordingly
+              LC 410
+
+Pointers
+        Opposing Pointers (Greedy State)
+              Move the pointer that currently bottlenecks the overall objective inward to search for a globally better configuration
+              LC 11
+              
+        Opposing Pointers (Boundary State)
+              Maintain running historical extremes (like max/min heights encountered so far) to calculate localized, 
+              cumulative results at the smaller boundary's position.
+              LC 42
+              
+        Fast and Slow Pointers
+              Advance one pointer twice as fast as the other to detect cycles or pinpoint the exact middle of a structure
+              LC 142
+              
+        Sliding Window
+              Shift a window of static size $k$ across the data by adding the incoming element and dropping the outgoing one
+              LC 438
+              
+        Dynamic Window
+              Expand the window to find a valid state, then shrink it from the left to find the optimal/smallest valid subarray
+              LC 76
+
+Stack 
+        Monotonic 
+            Hold elements linearly on a stack to "wait" for their future answer, 
+            bypassing a polynomial $O(n^2)$ look-forward scan for an $O(n)$ solution
+
+            LC 84
