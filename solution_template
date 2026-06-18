@@ -1,0 +1,45 @@
+Question is pasted
+
+Read Question
+
+Define
+    Input 
+    Output
+    Transformation
+    Constraints
+    Pattern Identification 
+          Similiar
+          Differences
+    Test Cases
+
+Design Solution
+    Brute Force
+        Complexities
+    Optimal
+        Complexities
+    Finalise Solution
+
+Design Code
+    Variables
+    Conditions
+    CRUD
+    Return Value
+    Invariant
+
+Coding 
+  Syntax
+  init
+  Variable Name
+  Modular
+  Mergable
+
+Dry Run
+  Catch Bug
+  Fix Bug
+  All return value
+
+Follow ups
+  Input not on machine, via API
+  Concurrency 
+  Space optimization
+
