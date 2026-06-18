@@ -1,3 +1,113 @@
-Recursion 
-Backtracking 
-DP
+Recursion
+      Break a problem down into smaller, self-similar sub-problems that resolve via a base case and an unwinding call stack.
+      LC 273
+
+Backtracking(Order Doesn't Matter)
+      Build combinations where subset grouping is what counts; use an index pointer to strictly move forward and prevent duplicate pairs.
+      LC 51
+
+Backtracking(Order Matters)
+      Build permutations where the specific sequence arrangement counts; use a visited array or bitmask instead 
+      of a forward index pointer to pick from all available elements.
+      LC 37
+
+Backtracking(Split / Partition)
+      Divide a string or array into valid contiguous sub-segments, 
+      branching at every valid split index before recursively processing the remaining suffix.
+      LC 301
+
+Branch Pruning
+      Introduce bounding conditions early inside a recursive backtracking search block to 
+      kill dead-end decision paths before they run, preventing TLE.
+      LC 473
+
+Recurrence Relation
+      The explicit mathematical equation that defines the state of a large problem in terms of its smaller, memoized sub-problems.
+      LC 1416
+
+Linear DP
+      Transition states sequentially along a simple 1D array where each index depends strictly on a fixed window of preceding indices.
+      LC 32
+
+Take or Skip (0/1 Knapsack)
+      For each item, branch into two decisions—either "take" it and collect its value while consuming capacity, or "skip" it completely.
+      LC 123
+
+Rolling Array (Space Optimization)
+      Optimize a 2D grid DP O(M*N) down to two 1D rows O(N) by recognizing that the current step only relies on data 
+      from the immediate prior row i-1.
+      LC 115
+
+Scalar / Dynamic
+      The DP table tracks variable numeric values or optimal costs that fluidly accumulate across decisions.
+      LC 174
+
+Monotonic
+      The DP transition sequence forces values to strictly increase or decrease, tracking boundaries like the Longest Common Subsequence.
+      LC 72
+
+Qualitative
+      States don't just track numeric counts; they encode structural attributes, states, or specific boolean criteria.
+      LC 10
+
+Fixed
+        The size dimensions of the DP table grid remain hardcoded or depend directly on stationary, unshifting problem parameters.
+        LC 132
+
+Cyclic
+        States naturally loop back or wrap around, requiring you to copy/extend the array or use modular arithmetic 
+        to break the loop into a linear sequence.
+        LC 213
+
+Bounded (0/1) & Backward Loop
+        Items are strictly limited; once an item is picked, you must transition to the next index, forcing a Backward Loop if space-optimizing 
+        a 1D array to prevent reusing the same item.
+        LC 474
+
+Unbounded & Forward Loop
+        Items are infinite; you can repeatedly choose the exact same item at your current state, forcing a Forward Loop to naturally 
+        build upon already updated capacities.
+        LC 1449
+
+State Machine DP
+        Explicitly transition between custom qualitative states (e.g., HasStock, NoStock, Cooldown) at each step of an iteration 
+        loop to map conditional rules.
+        LC 188
+
+Matrix Chain Multiplication (Interval DP)
+        Compute the optimal cost for an entire range by checking every possible midpoint to split the interval into two independent sub-intervals ($O(n^3)$).
+        LC 312
+
+Tree DP
+        Execute dynamic programming over an explicit graph tree structure, using bottom-up DFS to pass optimal sub-tree states 
+        from child nodes up to their parents.
+        LC 834
+
+Bitmask DP (State Compression)
+        Use an integer's binary bits as a boolean array mask ($O(2^n)$) to track subsets or visited configurations 
+        when the input size $N$ is small ($N \le 20$).
+        LC 847
+
+Digit DP
+        Solve combinatorial counting problems up to a massive ceiling integer $X$ by processing numbers digit-by-digit from left to right while 
+        tracking strict boundary constraints.
+        LC 233
+
+
+
+Forward Loop (i to i + 1): 
+        Used when the current state depends on past calculated states, moving forward from 0 to N to build the solution.
+
+Backward Loop (i to i - 1): 
+        Used when the current state depends on future sub-problems, winding backward from N down to 0 
+        (common in game theory or suffix/decision-tree DP).
+
+Bounded (0/1 Knapsack) implies Backward Loop: 
+        Iterate backward through capacities (W to 0) to ensure you calculate the current item's state using values from the previous item row, 
+        preventing an item from being picked multiple times.
+
+Unbounded (Infinite Knapsack) implies$ Forward Loop: 
+        Iterate forward through capacities (0 to W) intentionally allowing the current calculation to use newly updated values from the same row, 
+        enabling an item to be picked infinitely.
+
+
