@@ -1,26 +1,79 @@
-Optmisation
-  Prefix Sum
-  Fenwcik tree
-  Segment Tree
-  Senti-nel
-  Lazy Deletion
-  Relaztion 
-  Catalan Number
-  Acker Mann
-  Fence Post problem 
-  Edge Chaining
+Prefix Sum
+      Precompute cumulative totals in an array to answer any contiguous range sum query in $O(1)$ time.
+      LC 862
 
-TC 10 power
-  7 Fast
-  8 Boarderline
-  9 Slow
+Fenwick Tree
+      Utilize bitwise index relations to support both point updates 
+      and prefix sum queries in Log-N time with a lightweight, flat array structure.
+      LC 315
 
-Follow up 
-  Input not fit in memory
-  Space optmised
-  Concureency 
-      locks/mutex 
-      Segmented locking
-      Sempaphore
-      Rlock
-      RWlock
+Segment Tree
+      Build a full binary tree structure to support flexible range queries (Min, Max, GCD) 
+      and dynamic array updates in Log-N time.
+      LC 699
+
+Sentinel Node / Value
+      Introduce dummy boundaries (like a fake tail node or infinity limits) to eliminate conditional branch checking in loops.
+      LC 84
+
+Lazy Deletion
+      Postpone the overhead of physically removing invalid elements from a data structure (like a Heap) until they naturally 
+      surface at the top during queries.
+      LC 871
+
+Relaxation
+      Repeatedly check if an intermediate path can shrink the currently known shortest distance to a vertex, 
+      updating it if a more optimal option exists.
+      LC 787
+
+Edge Chaining (Hashing)
+      Address hash map collision conflicts by storing intersecting keys within a linked list 
+      chain at the same bucket location.
+      LC 706
+
+Catalan Number
+      Evaluate the total unique combinations of structurally balanced formations (like valid parenthesizations or full binary trees)
+      LC 96
+
+Ackermann Function
+      A classic, non-primitive recursive mathematical function used to establish bounds on structural growth 
+      rates (such as the inverse Ackermann function $\alpha(n)$ used in Union-Find time analysis)
+
+Fence Post Problem
+      Avoid classic off-by-one errors by recognizing that connecting $N$ items in a sequence always requires 
+      exactly $N-1$ connectors or separators.
+      LC 1096
+
+10^7 (Fast)
+10^8 (Borderline)
+10^9 (Slow / TLE)
+
+Input Not Fitting in Memory
+
+Space Optimized
+      LC 289
+
+
+Locks / Mutex (Mutual Exclusion)
+      Restrict code execution blocks so that only a single thread can interact with a resource, 
+      forcing all other threads to block and wait.
+      LC 1114
+
+Segmented Locking (Striping)
+      Divide a giant data structure into independent shards, assigning distinct locks to each piece to let multiple threads 
+      modify different regions simultaneously.
+      LC 146
+
+Semaphore
+      Use a counter-based variable to control thread access, enabling a designated maximum number of concurrent threads 
+      to share a fixed pool of resource instances.
+      LC 1117
+
+RLock (Reentrant Lock)
+      Allow a thread that already holds a specific lock to acquire it again without deadlocking itself, 
+      matching nesting recursive function loops.
+
+RWLock (Read-Write Lock)
+      Allow multiple reader threads to access a resource concurrently, but completely block everyone when a writer thread requests 
+      exclusive access to make an update.
+      LC 1242
