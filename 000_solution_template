@@ -46,11 +46,17 @@ Follow ups
 
 =====================================================================================
 The Process is Sacred
-The steps never change
-    only the time spent on them fluctuates based on complexity. Never skip a step.
+        The steps never change
+            only the time spent on them fluctuates based on complexity. Never skip a step.
 
 Prove Before You Code
-    Mathematically or logically establish the correctness of your approach before writing a single line. 
-    You should know it works without needing a compiler to tell you
+        Mathematically or logically establish the correctness of your approach before writing a single line. 
+        You should know it works without needing a compiler to tell you
+
+Respect the Protocol
+        Harder problems just take longer—they don't change the rules. Never skip a step.
+
+Verify on Paper, Execute on Screen
+        Prove correctness before you write code. Compiling is for syntax check, not validation
 
 
