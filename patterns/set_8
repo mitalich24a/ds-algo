@@ -7,6 +7,7 @@ Intervals
       Delete
               Sort by end time to greedily keep intervals that finish earliest, dropping any subsequent intervals that conflict.
               LC 1272
+              LC 435
       
       Sweep Line
               Flatten intervals into chronological +1 (start) and -1 (end) events, tracking peak concurrency or 
