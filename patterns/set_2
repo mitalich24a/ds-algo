@@ -30,18 +30,3 @@ Heap
       Combine a Max-Heap (lower half) and a Min-Heap (upper half) to continuously balance elements 
       and find the running median
       LC 295
-
-Intervals
-    Merge
-      Sort intervals by their start times and combine adjacent segments whenever the start of the 
-      current interval overlaps the end of the previous one
-      LC 759
-
-    Delete
-      Identify target ranges to remove and adjust the boundaries of adjacent, overlapping intervals on the fly
-      LC 1272
-
-    Sweep Line
-      Treat interval boundaries as chronological events (start = +1, end = -1) and 
-      iterate through them to track active overlaps at any point in time
-      LC 218
