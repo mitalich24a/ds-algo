@@ -1,0 +1,24 @@
+Intervals
+
+      Merge
+              Sort by start time, then linearly combine adjacent segments whenever the current start overlaps the previous end
+              LC 57
+      
+      Delete
+              Sort by end time to greedily keep intervals that finish earliest, dropping any subsequent intervals that conflict.
+              LC 1272
+      
+      Sweep Line
+              Flatten intervals into chronological +1 (start) and -1 (end) events, tracking peak concurrency or 
+              metadata changes as you slide left-to-right
+              LC 218
+      
+      Intersection
+              Use two pointers to slide across two separate pre-sorted lists, grabbing the [max(starts), min(ends)] overlap window, 
+              then advance the smaller end
+              LC 986
+      
+      Complement
+              Run a global merge on all schedules, then collect the empty time frames between the end of one merged block 
+              and the start of the next
+              LC 759
