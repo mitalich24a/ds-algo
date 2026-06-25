@@ -32,6 +32,11 @@ BFS
                Spread through a grid layer by layer
                LC 994
 
+        Multi-Source BFS
+
+        State Space BFS
+                LC 847
+
 
 Keep Track of Call Stack
         Leverage the language's implicit runtime stack (via recursion) to 
