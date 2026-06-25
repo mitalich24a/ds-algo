@@ -81,6 +81,9 @@ Floyd Warshall
         if an intermediate node $K$ offers a shorter route.
         LC 1334
 
+Tarjan
+        LC 1192
+
 Directed
         Edges possess orientation; traveling from Node A to Node B does not automatically allow travel from B back to A
         LC 207
