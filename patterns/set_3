@@ -17,9 +17,11 @@ DFS
 
         Component Size DFS
                 LC 200
+                Island size, Connected component, Group size, Area, Region, Cluster
 
         Path DFS
                 LC 124
+                Longest, Maximum path, Minimum path, Best route, Deepest
 
 BFS
         Shortest Path BFS
