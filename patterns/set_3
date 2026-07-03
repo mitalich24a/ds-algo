@@ -15,6 +15,12 @@ DFS
               Treat each cell as a node and explore connected cells
               LC 130
 
+        Component Size DFS
+                LC 200
+
+        Path DFS
+                LC 124
+
 BFS
         Shortest Path BFS
                 Explore level by level to find the shortest path in an unweighted graph.
