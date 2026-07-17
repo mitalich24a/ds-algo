@@ -1,0 +1,10 @@
+Enumeration to Property-based reasoning
+Naive 
+    Find all
+    Filter
+    Compute ans
+
+Smart 
+    Identify what property determines ans
+    verify property
+    Compute ans
